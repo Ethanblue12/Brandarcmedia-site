@@ -131,44 +131,39 @@
       />
 
       <div
-        class="hidden md:flex items-center justify-between absolute left-1/2 transform -translate-x-1/2 px-2 py-2 rounded-full w-[610px] backdrop-blur-2xl bg-white/[0.03] border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
+        class="hidden md:flex items-center justify-between absolute left-1/2 transform -translate-x-1/2 px-2 py-2 rounded-full w-[90%] max-w-[610px] backdrop-blur-2xl bg-white/[0.03] border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
       >
         <a
           href="index.html"
-          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
-       {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'home' else 'text-gray-400 hover:text-white' }}"
+          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]"
         >
           Home
         </a>
 
         <a
           href="templates/about.html"
-          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
-       {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'about' else 'text-gray-400 hover:text-white' }}"
+          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest text-white hover:text-accent"
         >
           about
         </a>
 
         <a
           href="templates/service.html"
-          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
-       {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'services' else 'text-gray-400 hover:text-white' }}"
+          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest text-white hover:text-accent"
         >
           Services
         </a>
 
         <a
           href="templates/portfolio.html"
-          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
-       {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'portfolio' else 'text-gray-400 hover:text-white' }}"
+          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest text-white hover:text-accent"
         >
           Portfolio
         </a>
 
         <a
           href="templates/contact.html"
-          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
-       {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'contact' else 'text-gray-400 hover:text-white' }}"
+          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest text-white hover:text-accent"
         >
           Contact
         </a>
