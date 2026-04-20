@@ -168,6 +168,61 @@
           Contact
         </a>
       </div>
+
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden text-orange-500 hover:scale-110 transition-transform"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-9 w-9"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div
+      id="mobile-menu"
+      class="max-h-0 mt-30 mb-10 overflow-hidden transition-all duration-500 md:hidden px-4"
+    >
+      <div
+        class="mt-40 rounded-2xl bg-accent backdrop-blur-md border border-white/10"
+      >
+        <a
+          href="../index.html"
+          class="block p-4 text-[20px] border-b border-white/10 hover:bg-white/10"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="block p-4 border-b text-[20px] border-white/10 hover:bg-white/10"
+          >About</a
+        >
+        <a
+          href="service.html"
+          class="block p-4 border-b text-[20px] border-white/10 hover:bg-white/10"
+          >Services</a
+        >
+        <a
+          href="portfolio.html"
+          class="block p-4 border-b text-[20px] border-white/10 hover:bg-white/10"
+          >Portfolio</a
+        >
+        <a href="contact.html" class="block p-4 text-[20px] hover:bg-white/10"
+          >Contact</a
+        >
+      </div>
+    </div>
     <!-- PORTFOLIO SECTION -->
 
     <section class="w-full">
@@ -197,7 +252,7 @@
         </div>
         <div class="lg:w-1/2 bg-zinc-100">
           <img
-            ssrc="../static/images/brand7.jpg"
+            src="../static/images/brand7.jpg"
             class="w-full h-full object-cover"
           />
         </div>
@@ -230,7 +285,7 @@
         </div>
         <div class="lg:w-1/2 bg-zinc-900">
           <img
-           src="../static/images/kira7.jpg"
+            src="../static/images/kira7.jpg"
             class="w-full h-full object-cover opacity-80"
           />
         </div>
