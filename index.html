@@ -122,60 +122,48 @@
     <!-- NAVBAR -->
     <nav
       id="navbar"
-      class="fixed top-3 md:top-5 left-0 w-full flex justify-between items-center py-6 z-50 backdrop-blur-lg border-b border-white/5 md:border-none"
+      class="fixed top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-50 backdrop-blur-lg border-b border-white/5 md:px-12"
     >
       <img
         src="static/images/brand9.png"
         alt="Logo"
-        class="w-40 h-auto md:w-40"
+        class="w-32 md:w-40 h-auto"
       />
 
       <div
-        class="hidden md:flex items-center justify-between absolute left-1/2 transform -translate-x-1/2 px-2 py-2 rounded-full w-[83%] max-w-[610px] md:w-[90%] backdrop-blur-2xl bg-white/[0.03] border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
+        class="hidden md:flex items-center justify-between absolute left-1/2 transform -translate-x-1/2 px-2 py-2 rounded-full w-auto min-w-[550px] bg-white/[0.03] border border-white/10 shadow-lg"
       >
         <a
           href="index.html"
-          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]"
+          class="px-5 py-2.5 rounded-full transition-all text-sm font-black uppercase bg-orange-500 text-black"
+          >Home</a
         >
-          Home
-        </a>
-
         <a
           href="templates/about.html"
-          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest text-white hover:text-accent"
+          class="px-5 py-2.5 rounded-full transition-all text-sm font-black uppercase text-white hover:text-accent"
+          >About</a
         >
-          about
-        </a>
-
         <a
           href="templates/service.html"
-          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest text-white hover:text-accent"
+          class="px-5 py-2.5 rounded-full transition-all text-sm font-black uppercase text-white hover:text-accent"
+          >Services</a
         >
-          Services
-        </a>
-
         <a
           href="templates/portfolio.html"
-          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest text-white hover:text-accent"
+          class="px-5 py-2.5 rounded-full transition-all text-sm font-black uppercase text-white hover:text-accent"
+          >Portfolio</a
         >
-          Portfolio
-        </a>
-
         <a
           href="templates/contact.html"
-          class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest text-white hover:text-accent"
+          class="px-5 py-2.5 rounded-full transition-all text-sm font-black uppercase text-white hover:text-accent"
+          >Contact</a
         >
-          Contact
-        </a>
       </div>
 
-      <button
-        id="mobile-menu-btn"
-        class="md:hidden text-orange-500 hover:scale-110 transition-transform"
-      >
+      <button id="mobile-menu-btn" class="md:hidden text-orange-500 p-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-9 w-9"
+          class="h-8 w-8"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -190,39 +178,32 @@
       </button>
     </nav>
 
-    <!-- MOBILE MENU -->
     <div
       id="mobile-menu"
-      class="max-h-0 mt-30 mb-10 overflow-hidden transition-all duration-500 md:hidden px-4"
+      class="fixed top-[68px] left-0 w-full max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:hidden z-40 px-4"
     >
       <div
-        class="mt-40 rounded-2xl bg-accent backdrop-blur-md border border-white/10"
+        class="rounded-2xl bg-black/95 backdrop-blur-xl border border-white/10 shadow-2xl overflow-hidden"
       >
-        <a
-          href="index.html"
-          class="block p-4 text-[25px] border-b border-white/10 hover:bg-white/10"
+        <a href="index.html" class="block p-5 text-xl border-b border-white/5"
           >Home</a
         >
         <a
           href="templates/about.html"
-          class="block p-4 border-b text-[25px] border-white/10 hover:bg-white/10"
+          class="block p-5 text-xl border-b border-white/5"
           >About</a
         >
         <a
           href="templates/service.html"
-          class="block p-4 border-b text-[25px] border-white/10 hover:bg-white/10"
+          class="block p-5 text-xl border-b border-white/5"
           >Services</a
         >
         <a
           href="templates/portfolio.html"
-          class="block p-4 border-b text-[25px] border-white/10 hover:bg-white/10"
+          class="block p-5 text-xl border-b border-white/5"
           >Portfolio</a
         >
-        <a
-          href="templates/contact.html"
-          class="block p-4 text-[25px] hover:bg-white/10"
-          >Contact</a
-        >
+        <a href="templates/contact.html" class="block p-5 text-xl">Contact</a>
       </div>
     </div>
 
@@ -811,11 +792,21 @@
       const menu = document.getElementById("mobile-menu");
 
       btn.onclick = () => {
-        menu.style.maxHeight = menu.style.maxHeight
-          ? null
-          : menu.scrollHeight + "px";
+        // If maxHeight is set, we clear it (close it)
+        if (menu.style.maxHeight) {
+          menu.style.maxHeight = null;
+        } else {
+          // Otherwise, set it to the full height of the internal links
+          menu.style.maxHeight = menu.scrollHeight + "px";
+        }
       };
 
+      // Optional: Close menu if user clicks a link (helpful for single-page apps)
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.onclick = () => {
+          menu.style.maxHeight = null;
+        };
+      });
       // Scroll animation
       const elements = document.querySelectorAll(".fade-up");
       const observer = new IntersectionObserver((entries) => {
