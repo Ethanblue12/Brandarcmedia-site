@@ -125,7 +125,7 @@
       class="fixed top-3 md:top-5 left-0 w-full flex justify-between items-center px-8 py-6 z-50 backdrop-blur-lg border-b border-white/5 md:border-none"
     >
       <img
-        src="{{ url_for('static', filename='images/brand9.png') }}"
+        src="static/images/brand9.png"
         alt="Logo"
         class="w-48 h-auto md:w-40"
       />
@@ -134,7 +134,7 @@
         class="hidden md:flex items-center justify-between absolute left-1/2 transform -translate-x-1/2 px-2 py-2 rounded-full w-[610px] backdrop-blur-2xl bg-white/[0.03] border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
       >
         <a
-          href="{{ url_for('home') }}"
+          href="index.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'home' else 'text-gray-400 hover:text-white' }}"
         >
@@ -142,7 +142,7 @@
         </a>
 
         <a
-          href="{{ url_for('about') }}"
+          href="template/about.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'about' else 'text-gray-400 hover:text-white' }}"
         >
@@ -150,7 +150,7 @@
         </a>
 
         <a
-          href="{{ url_for('services') }}"
+          href="template/service.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'services' else 'text-gray-400 hover:text-white' }}"
         >
@@ -158,7 +158,7 @@
         </a>
 
         <a
-          href="{{ url_for('portfolio') }}"
+          href="template/portfolio.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'portfolio' else 'text-gray-400 hover:text-white' }}"
         >
@@ -166,7 +166,7 @@
         </a>
 
         <a
-          href="{{ url_for('contact') }}"
+          href="template/contact.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'contact' else 'text-gray-400 hover:text-white' }}"
         >
@@ -204,27 +204,27 @@
         class="mt-40 rounded-2xl bg-accent backdrop-blur-md border border-white/10"
       >
         <a
-          href="{{ url_for('home') }}"
+          href="index.html"
           class="block p-4 text-[25px] border-b border-white/10 hover:bg-white/10"
           >Home</a
         >
         <a
-          href="{{ url_for('about') }}"
+          href="template/about.html"
           class="block p-4 border-b text-[25px] border-white/10 hover:bg-white/10"
           >About</a
         >
         <a
-          href="{{ url_for('services') }}"
+          href="template/service.html"
           class="block p-4 border-b text-[25px] border-white/10 hover:bg-white/10"
           >Services</a
         >
         <a
-          href="{{ url_for('portfolio') }}"
+          href="template/portfolio.html"
           class="block p-4 border-b text-[25px] border-white/10 hover:bg-white/10"
           >Portfolio</a
         >
         <a
-          href="{{ url_for('contact') }}"
+          href="template/contact.html"
           class="block p-4 text-[25px] hover:bg-white/10"
           >Contact</a
         >
@@ -332,7 +332,7 @@
             class="group relative h-[550px] overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900/50 backdrop-blur-md transition-all duration-500 hover:border-orange-500 hover:shadow-[0_0_40px_rgba(249,115,22,0.2)]"
           >
             <img
-              src="{{ url_for('static', filename='images/brand6.jpg') }}"
+              src="static/images/brand6.jpg"
               alt="Brand Identity"
               class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110 group-hover:rotate-1 grayscale-[30%] group-hover:grayscale-0"
             />
@@ -366,7 +366,7 @@
             class="group relative h-[550px] overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900/50 backdrop-blur-md transition-all duration-500 hover:border-orange-500 hover:shadow-[0_0_40px_rgba(249,115,22,0.2)]"
           >
             <img
-              src="{{ url_for('static', filename='images/kira4.jpg') }}"
+              src="static/images/kira4.jpg"
               alt="Regional Exploration"
               class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110 group-hover:rotate-1 grayscale-[30%] group-hover:grayscale-0"
             />
@@ -402,7 +402,7 @@
             class="group relative h-[550px] overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900/50 backdrop-blur-md transition-all duration-500 hover:border-orange-500 hover:shadow-[0_0_40px_rgba(249,115,22,0.2)]"
           >
             <img
-              src="{{ url_for('static', filename='images/kit1.png') }}"
+              src="static/images/kit1.png"
               alt="Creative Agency"
               class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110 group-hover:rotate-1 grayscale-[30%] group-hover:grayscale-0"
             />
@@ -438,7 +438,7 @@
             class="group relative h-[550px] overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900/50 backdrop-blur-md transition-all duration-500 hover:border-orange-500 hover:shadow-[0_0_40px_rgba(249,115,22,0.2)]"
           >
             <img
-              src="{{ url_for('static', filename='images/little3.jpg') }}"
+              src="static/images/little3.jpg"
               alt="Product Mockups"
               class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110 group-hover:rotate-1 grayscale-[30%] group-hover:grayscale-0"
             />
@@ -476,22 +476,22 @@
     <div class="w-full bg-primary overflow-hidden py-[30px]">
       <div class="flex gap-[100px] w-max animate-slow-slide">
         <img
-          src="{{ url_for('static', filename='images/kira12.png') }}"
+          src="static/images/kira12.png"
           alt="Logo 1"
           class="h-[60px] w-auto opacity-40"
         />
         <img
-          src="{{ url_for('static', filename='images/brand10.png') }}"
+          src="static/images/brand10.png"
           alt="Logo 2"
           class="h-[60px] w-auto opacity-40"
         />
         <img
-          src="{{ url_for('static', filename='images/kit10.png') }}"
+          src="static/images/kit10.png"
           alt="Logo 3"
           class="h-[60px] w-auto opacity-40"
         />
         <img
-          src="{{ url_for('static', filename='images/little8.png') }}"
+          src="static/images/little8.png"
           alt="Logo 4"
           class="h-[60px] w-auto opacity-40"
         />
@@ -570,7 +570,7 @@
               class="relative h-[450px] bg-gray-800 rounded-tr-[50px] overflow-hidden"
             >
               <img
-                src="{{ url_for('static', filename='images/intern1.jpg') }}"
+                src="static/images/intern1.jpg"
                 alt="Daniel O."
                 class="w-full h-full object-cover"
               />
@@ -589,7 +589,7 @@
               class="relative h-[450px] bg-gray-700 rounded-tr-[50px] overflow-hidden"
             >
               <img
-                src="{{ url_for('static', filename='images/intern2.jpg') }}"
+                src="static/images/intern2.jpg"
                 alt="Sarah A."
                 class="w-full h-full object-cover"
               />
@@ -608,7 +608,7 @@
               class="relative h-[450px] bg-gray-600 rounded-tr-[50px] overflow-hidden"
             >
               <img
-                src="{{ url_for('static', filename='images/intern3.jpg') }}"
+                src="static/images/intern3.jpg"
                 alt="Lücïd Jr."
                 class="w-full h-full object-cover"
               />
@@ -627,7 +627,7 @@
               class="relative h-[450px] bg-gray-800 rounded-tr-[50px] overflow-hidden"
             >
               <img
-                src="{{ url_for('static', filename='images/intern4.jpg') }}"
+                src="static/images/intern4.jpg"
                 alt="Intern 4"
                 class="w-full h-full object-cover"
               />
@@ -646,7 +646,7 @@
               class="relative h-[450px] bg-gray-700 rounded-tr-[50px] overflow-hidden"
             >
               <img
-                src="{{ url_for('static', filename='images/intern5.jpg') }}"
+                src="static/images/intern5.jpg"
                 alt="Intern 5"
                 class="w-full h-full object-cover"
               />
@@ -665,7 +665,7 @@
               class="relative h-[450px] bg-gray-600 rounded-tr-[50px] overflow-hidden"
             >
               <img
-                src="{{ url_for('static', filename='images/intern6.jpg') }}"
+                src="static/images/intern6.jpg"
                 alt="Intern 6"
                 class="w-full h-full object-cover"
               />

@@ -125,7 +125,7 @@
       class="fixed top-3 md:top-5 left-0 w-full flex justify-between items-center px-8 py-6 z-50 backdrop-blur-lg border-b border-white/5 md:border-none"
     >
       <img
-        src="{{ url_for('static', filename='images/brand9.png') }}"
+        src="static/images/brand9.png"
         alt="Logo"
         class="w-40 h-auto md:w-40"
       />
@@ -134,7 +134,7 @@
         class="hidden md:flex items-center justify-between absolute left-1/2 transform -translate-x-1/2 px-2 py-2 rounded-full w-[610px] backdrop-blur-2xl bg-white/[0.03] border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
       >
         <a
-          href="{{ url_for('home') }}"
+          href="../index.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'home' else 'text-gray-400 hover:text-white' }}"
         >
@@ -142,7 +142,7 @@
         </a>
 
         <a
-          href="{{ url_for('about') }}"
+          href="about.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'about' else 'text-gray-400 hover:text-white' }}"
         >
@@ -150,7 +150,7 @@
         </a>
 
         <a
-          href="{{ url_for('services') }}"
+          href="service.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'services' else 'text-gray-400 hover:text-white' }}"
         >
@@ -158,7 +158,7 @@
         </a>
 
         <a
-          href="{{ url_for('portfolio') }}"
+          href="portfolio.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'portfolio' else 'text-gray-400 hover:text-white' }}"
         >
@@ -166,7 +166,7 @@
         </a>
 
         <a
-          href="{{ url_for('contact') }}"
+          href="contact.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'contact' else 'text-gray-400 hover:text-white' }}"
         >
@@ -204,28 +204,26 @@
         class="mt-40 rounded-2xl bg-accent backdrop-blur-md border border-white/10"
       >
         <a
-          href="{{ url_for('home') }}"
+          href="../index.html"
           class="block p-4 text-[20px] border-b border-white/10 hover:bg-white/10"
           >Home</a
         >
         <a
-          href="{{ url_for('about') }}"
+          href="about.html"
           class="block p-4 border-b text-[20px] border-white/10 hover:bg-white/10"
           >About</a
         >
         <a
-          href="{{ url_for('services') }}"
+          href="service.html"
           class="block p-4 border-b text-[20px] border-white/10 hover:bg-white/10"
           >Services</a
         >
         <a
-          href="{{ url_for('portfolio') }}"
+          href="portfolio.html"
           class="block p-4 border-b text-[20px] border-white/10 hover:bg-white/10"
           >Portfolio</a
         >
-        <a
-          href="{{ url_for('contact') }}"
-          class="block p-4 text-[20px] hover:bg-white/10"
+        <a href="contact.html" class="block p-4 text-[20px] hover:bg-white/10"
           >Contact</a
         >
       </div>
@@ -249,7 +247,9 @@
             >
               <div
                 class="absolute inset-0 bg-cover bg-center hover:grayscale-0 transition-all duration-700"
-                style="background-image: url('{{ url_for('static', filename='images/brand3.png') }}');"
+                style="
+                  background-image: url(&quot;static/images/brand3.png&quot;);
+                "
               ></div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"
@@ -371,7 +371,7 @@
               class="aspect-[4/5] md:aspect-auto md:h-[500px] overflow-hidden"
             >
               <img
-                src="{{ url_for('static', filename='images/little6.jpg') }}"
+                src="static/images/little6.jpg"
                 alt="Founder"
                 class="w-full h-full object-cover group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 opacity-80 group-hover:opacity-100"
               />
@@ -397,7 +397,7 @@
               class="aspect-[4/5] md:aspect-auto md:h-[500px] overflow-hidden"
             >
               <img
-                src="{{ url_for('static', filename='images/boss.jpg') }}"
+                src="static/images/boss.jpg"
                 alt="Co-Founder"
                 class="w-full h-full object-cover group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 opacity-80 group-hover:opacity-100"
               />
@@ -421,7 +421,7 @@
           >
             <div class="aspect-square overflow-hidden">
               <img
-                src="{{ url_for('static', filename='images/brand6.jpg') }}"
+                src="static/images/brand6.jpg"
                 alt="Team"
                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-60"
               />
@@ -441,7 +441,7 @@
           >
             <div class="aspect-square overflow-hidden">
               <img
-                src="{{ url_for('static', filename='images/brand6.jpg') }}"
+                src="static/images/brand6.jpg"
                 alt="Team"
                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-60"
               />
@@ -461,7 +461,7 @@
           >
             <div class="aspect-square overflow-hidden">
               <img
-                src="{{ url_for('static', filename='images/brand6.jpg') }}"
+                src="static/images/brand6.jpg"
                 alt="Team"
                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-60"
               />

@@ -125,7 +125,7 @@
       class="fixed top-3 md:top-5 left-0 w-full flex justify-between items-center px-8 py-6 z-50 backdrop-blur-lg border-b border-white/5 md:border-none"
     >
       <img
-        src="{{ url_for('static', filename='images/brand9.png') }}"
+        src="static/images/brand9.png"
         alt="Logo"
         class="w-40 h-auto md:w-40"
       />
@@ -134,7 +134,7 @@
         class="hidden md:flex items-center justify-between absolute left-1/2 transform -translate-x-1/2 px-2 py-2 rounded-full w-[610px] backdrop-blur-2xl bg-white/[0.03] border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
       >
         <a
-          href="{{ url_for('home') }}"
+          href="../index.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'home' else 'text-gray-400 hover:text-white' }}"
         >
@@ -142,7 +142,7 @@
         </a>
 
         <a
-          href="{{ url_for('about') }}"
+          href="about.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'about' else 'text-gray-400 hover:text-white' }}"
         >
@@ -150,7 +150,7 @@
         </a>
 
         <a
-          href="{{ url_for('services') }}"
+          href="service.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'services' else 'text-gray-400 hover:text-white' }}"
         >
@@ -158,7 +158,7 @@
         </a>
 
         <a
-          href="{{ url_for('portfolio') }}"
+          href="portfolio.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'portfolio' else 'text-gray-400 hover:text-white' }}"
         >
@@ -166,7 +166,7 @@
         </a>
 
         <a
-          href="{{ url_for('contact') }}"
+          href="contact.html"
           class="flex-1 text-center py-2.5 rounded-full transition-all duration-500 text-sm font-black uppercase tracking-widest
        {{ 'bg-orange-500 text-black shadow-[0_0_20px_rgba(249,115,22,0.4)]' if request.endpoint == 'contact' else 'text-gray-400 hover:text-white' }}"
         >
@@ -198,34 +198,32 @@
     <!-- MOBILE MENU -->
     <div
       id="mobile-menu"
-      class="max-h-0 mb-10 overflow-hidden transition-all duration-500 md:hidden px-4"
+      class="max-h-0 mt-30 mb-10 overflow-hidden transition-all duration-500 md:hidden px-4"
     >
       <div
         class="mt-40 rounded-2xl bg-accent backdrop-blur-md border border-white/10"
       >
         <a
-          href="{{ url_for('home') }}"
+          href="../index.html"
           class="block p-4 text-[20px] border-b border-white/10 hover:bg-white/10"
           >Home</a
         >
         <a
-          href="{{ url_for('about') }}"
+          href="about.html"
           class="block p-4 border-b text-[20px] border-white/10 hover:bg-white/10"
           >About</a
         >
         <a
-          href="{{ url_for('services') }}"
+          href="service.html"
           class="block p-4 border-b text-[20px] border-white/10 hover:bg-white/10"
           >Services</a
         >
         <a
-          href="{{ url_for('portfolio') }}"
+          href="portfolio.html"
           class="block p-4 border-b text-[20px] border-white/10 hover:bg-white/10"
           >Portfolio</a
         >
-        <a
-          href="{{ url_for('contact') }}"
-          class="block p-4 text-[20px] hover:bg-white/10"
+        <a href="contact.html" class="block p-4 text-[20px] hover:bg-white/10"
           >Contact</a
         >
       </div>
@@ -259,7 +257,7 @@
         </div>
         <div class="lg:w-1/2 bg-zinc-100">
           <img
-            src="{{ url_for('static', filename='images/brand7.jpg') }}"
+            ssrc="static/images/brand7.jpg"
             class="w-full h-full object-cover"
           />
         </div>
@@ -292,7 +290,7 @@
         </div>
         <div class="lg:w-1/2 bg-zinc-900">
           <img
-            src="{{ url_for('static', filename='images/kira7.jpg') }}"
+           src="static/images/kira7.jpg"
             class="w-full h-full object-cover opacity-80"
           />
         </div>
@@ -326,7 +324,7 @@
         </div>
         <div class="lg:w-1/2 bg-zinc-100">
           <img
-            src="{{ url_for('static', filename='images/kit3.png') }}"
+            src="static/images/kit3.png"
             class="w-full h-full object-cover"
           />
         </div>
@@ -358,7 +356,7 @@
         </div>
         <div class="lg:w-1/2 bg-zinc-900">
           <img
-            src="{{ url_for('static', filename='images/little3.jpg') }}"
+            src="static/images/little3.jpg"
             class="w-full h-full object-cover opacity-80"
           />
         </div>
